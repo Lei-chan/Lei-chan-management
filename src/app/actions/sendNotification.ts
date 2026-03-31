@@ -1,5 +1,6 @@
+"use server";
 import { verifySession } from "../lib/dal";
-import { FormState, NotificationData, Project } from "../lib/definitions";
+import { FormState, NotificationData } from "../lib/definitions";
 import { handleError } from "../lib/helper";
 import { EINC_BASE_URL, WITHCOOKING_BASE_URL } from "../lib/settings";
 
