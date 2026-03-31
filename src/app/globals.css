@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  :root {
+    --background: #c7fff6;
+    --foreground: #171717;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--foreground);
+    background: var(--background);
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  a,
+  button {
+    cursor: pointer;
+  }
+
+  button {
+    border-radius: 5px;
+  }
+
+  input,
+  textarea {
+    border-radius: 5px;
+    border: solid thin rgba(0, 0, 0, 0.274);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: white;
+  }
+
+  textarea {
+    aspect-ratio: 1/0.5;
+    resize: none;
+  }
+
+  @media (min-width: 600px) {
+    body {
+      gap: 27px;
+    }
+  }
+
+  @media (min-width: 1220px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1550px) {
+    body {
+      gap: 32px;
+    }
+  }
+}
