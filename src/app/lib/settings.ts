@@ -4,3 +4,5 @@ export const WITHCOOKING_BASE_URL = "https://withcooking.lei-chan.website/api/";
 export const MIN_EACH_PASSWORD = 1;
 export const MIN_PASSWORD_LENGTH = 10;
 export const MIN_USERNAME_LENGTH = 10;
+
+export const projects = ["withCooking", "einc"];
